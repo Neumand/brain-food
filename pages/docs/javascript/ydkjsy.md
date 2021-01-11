@@ -1,4 +1,4 @@
-## You Don't Know JS Yet (2nd Edition ) - Kyle Simpson
+# You Don't Know JS Yet (2nd Edition ) - Kyle Simpson
 
 ## Chapter 1: What  _Is_  JavaScript?
 
