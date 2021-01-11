@@ -1,11 +1,11 @@
 export default {
   repository: 'https://github.com/neumand/brain-food',
+  docsRepository: 'https://github.com/neumand/brain-food',
   titleSuffix: ' – Brain Food',
   search: true,
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditOnGitHubLink: true,
   footerText: <>{new Date().getFullYear()} © David Neuman.</>,
   logo: (
     <>
