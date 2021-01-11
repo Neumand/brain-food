@@ -1,11 +1,17 @@
 export default {
-  repository: 'https://github.com/shuding/nextra',
-  titleSuffix: ' – Nextra',
+  repository: 'https://github.com/neumand/brain-food',
+  titleSuffix: ' – Brain Food',
+  search: true,
+  prevLinks: true,
+  nextLinks: true,
+  footer: true,
+  footerEditOnGitHubLink: true,
+  footerText: <>{new Date().getFullYear()} © David Neuman.</>,
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Brain Food</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next Site Builder
+        Personal Wiki
       </span>
     </>
   ),
@@ -32,10 +38,4 @@ export default {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
     </>
   ),
-  search: true,
-  prevLinks: true,
-  nextLinks: true,
-  footer: true,
-  footerEditOnGitHubLink: true,
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>
 }

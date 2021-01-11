@@ -1,5 +1,5 @@
 {
-  "name": "nextra",
+  "name": "brain-food",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "next start",
     "build": "next build"
   },
-  "author": "Shu Ding",
+  "author": "David Neuman",
   "license": "MIT",
   "dependencies": {
     "next": "^10.0.3",
