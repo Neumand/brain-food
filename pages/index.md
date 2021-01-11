@@ -1,7 +1,9 @@
-# Nextra
+# Brain Food
 
-**Nextra** is a [Next.js](https://nextjs.org) based static site generator. 0 line of code needed.  
+Brain food is:
+* A newsletter by Farnam Street's Shane Parrish
+* One of my favorite Spotify playlists for focus and concentration
 
-It supports Markdown with React components ([MDX](/docs/mdx)), automatically generated [sidebar and anchor links](/docs/anchors), file-system based routing, built-in syntax highlighting, i18n and more.
+It's now also the name of my personal wiki. The brain food you will find here is a collection of information on software development, writing, productivity, and anything else worth remembering.
 
-![](/demo.png)
+Don't forget to chew. Enjoy your food.
