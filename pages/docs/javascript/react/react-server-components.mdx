@@ -1,0 +1,66 @@
+# React Server Components
+
+Talk: [Data Fetching with React Server Components](https://www.youtube.com/watch?v=TQQPAU21ZUw&feature=emb_logo)
+
+## Why
+
+Dan describes three main wants when it comes to UI development:
+
+* **Good** user experience
+* **Cheap** maintenance
+* **Fast** performance
+
+Typically these's a tradeoff between them: which *two* would you choose?
+
+He also talks about decoupling components from the API data that they receive. For example:
+
+```jsx
+function ArtistPage({ artistId }) {
+  const data = await fetchAllData();
+  return (
+    <ArtistDetails details={data.details} artistId={artistId}>
+      <TopTracks tracks={data.tracks} artistId={artistId} />
+      <Discography titles={data.titles} artistId={artistId} />
+    </ArtistDetails>
+  );
+}
+```
+In this case we are fetching all of the data. What happens if we get rid of the `<TopTracks>` component? We might forget to remove the tracks data from the API.
+
+Instead we want a way to specify the data that each component wants to receive. This is to avoid passing the data down the entire component tree.
+
+## What
+
+Server components **only** execute on the server and are never shipped to the client.
+
+An example of a good candidate for such a component would be one that has no interactivity but also has data requirements.
+
+## Benefits
+
+1. Server components (and associated dependencies) are *not* shipped in the client bundle. This has huge positive performance implications - the less JS we ship to the browser, the faster our application will be.
+
+2. Server components that pass client components (JSX) as props to another client component pass **already fully rendered JSX**. This means that any computed values have already been calculated.
+
+3. Server components differ from SSR in the sense that **client-side state is always preserved**. The reason is because the components render into a special format instead of HTML. The two technologies are complementary, however, and can be used in tandem.
+
+## Constraints
+
+1. Server components **cannot** have any interactivity. That means no event listeners or state management.
+
+2. We can only pass to props to a client component from a server component if that prop can be serialized over the network (i.e. no function values).
+
+## Shared Components
+
+Client components are denoted with a `client.js` extension, while server components end with `.server.js`. If we don't specify this kind of file extension we tell React that it's a shared component.
+
+Shared components are useful in cases where we need both interactivity and a data requirement. One benefit of shared components is that they are only shipped to the client - lazy loaded - when it needs them. In this way we can save on the client bundle size and in turn, performance.
+
+## Summary
+
+**Mental model**: server components pass data from the backend to client components as props
+
+* Server components have zero effect on the bundle size
+* Server components allow you to access the backend resources directly
+* Server components let you only load the code that is necessary
+* Server components let you decide the tradeoff for every concrete use case
+* Server components provide modern UX with a server-driven mental model
