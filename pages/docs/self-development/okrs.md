@@ -2,7 +2,7 @@
 
 ## Software Development
 
-### Objective: Improve proficiency in web technologies
+### Objective: Improve proficiency in web technologies (Q1)
 
 **Key Results**
 
@@ -14,14 +14,14 @@
 
 ## Writing
 
-### Objective: Improve writing consistency
+### Objective: Improve writing consistency (Q1)
 
 **Key Results**
 
 * Write 12000 words (1000 words per week)
 * Publish 5 blog posts
 
-### Objective: Q2 - Launch newsletter
+### Objective: Launch newsletter (Q2)
 
 **Key Results**
 
@@ -31,15 +31,15 @@
 
 ## Wellbeing
 
-### Objective: Improve information content diet and retention
+### Objective: Improve information content diet and retention (Q1)
 
 **Key Results**
 
 * Read 5 books
-* 
-* 
+* Finish the quarter with 5 or less unread newsletter subscriptions
+* Spend 12 hours listening to educational podcast content
 
-### Objective: Make more time to reflect
+### Objective: Improve mental health (Q1)
 
 **Key Results**
 
