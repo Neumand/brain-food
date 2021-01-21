@@ -40,3 +40,38 @@ Bugs are just tech debt that users can see. What is the effort of fixing a bug v
 
 
 **Good technical debt is intentional**. Be intentional about what you invest time in and aware of the costs you're taking on. Build less, because you can always build more. Good tech debt has clear, well-known limitations.
+
+## [What I've Learned in 45 Years in the Software Industry](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)
+
+**1. Beware of the Curse of Knowledge**
+
+It becomes difficult to feel what it's like to NOT know something, once you know it. Keeping this in mind is important to properly mentoring junior developers. It's also important for writing and sharing code that is readable and maintainable.
+
+> Try to imagine what it would be like to learn what you are communicating for the first time.
+
+**2. Focus on the Fundamentals**
+
+* Teamwork
+* Trust
+* Communication
+* Consensus
+* Automated Testing
+* Clean Code & Design
+
+**3. Simplicity**
+
+Solutions should be as simple as possible, but no less. We should still strive to not oversimplify complex problems, but succinctly convey their complexity.
+
+**4. Seek First to Understand**
+
+> Actively listen to understand (teammates') feelings, ideas, and point of view before you begin trying to make your own thoughts known.
+
+**5. Beware of Lock-In**
+
+Choose technologies that are built to last. New is not always better.
+
+**6. Be Honest and Acknowledge When You Don't Fit a Role**
+
+Your values should align with those of the company you're working for. If they don't, nothing good can come out of it.
+
+> The key is to have the self-knowledge to recognize what is happening and get yourself out of an unhealthy spot. Being unhappy is in no-one's best interests.
