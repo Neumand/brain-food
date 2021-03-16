@@ -19,6 +19,8 @@ An evergrowing list of tutorials, blogs, newsletters, podcasts, assets, and more
 
 [JS: The Right Way](https://jstherightway.org/)
 
+[JavaScript Developer Reading List](https://github.com/twhite96/js-dev-reads#the-javascript-developers-reading-list)
+
 ## CSS
 [CSS for JavaScript Developers](https://css-for-js.dev/)
 
