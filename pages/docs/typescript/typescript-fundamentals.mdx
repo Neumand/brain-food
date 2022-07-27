@@ -1,0 +1,13 @@
+# TypeScript Fundamentals
+
+## Type Categories
+- **Nominal**. Typing is based on the "name" of something. The type system cares about the name of the class it originates from (Java, C++, C#, etc.)
+- **Structural**. Type system only cares about the structure or the shape of the object (TypeScript). TS is a structural system so that it can be incrementally adopted to JS, a dynamically typed language.
+
+### Union Types
+
+A union type represents the OR operator. It's technically related to Set theory, but for the purposes of learning TS no need to understand that.
+
+```typescript
+const outcome: "success" | "error";
+```
