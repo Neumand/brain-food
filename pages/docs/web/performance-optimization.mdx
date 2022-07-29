@@ -1,0 +1,48 @@
+# Performance Optimization
+
+## 3 Keys to Performance
+
+1. Improve client-side performance
+2. Improve file transfer over the wire (i.e. network latency)
+3. Improve backend processing
+
+Focus on the most important potential performance bottlenecks first.
+
+## Frontend Performance
+
+### Critical Render Path
+
+### Optimized Code (Code Splitting)
+
+### Progressive Web App
+
+## File Transfer
+
+### Minimize Files
+Minimizing the file size of the different files that we ship to the browser will improve the performance of a website. We can reduce the file size for:
+
+**Text**. JS, CSS and HTML files.
+
+**Images**
+
+Image optimization is more difficult, but it's a common reason for bloated websites.
+
+- **JPG**: complex images
+- **PNG**: limit number of colors that you can use and are smaller in size than JPGs; good for logos
+- **SVG**: vector graphics; designers work with on Adobe, Sketch, etc; you can expand an SVG to several times its size and it will retain its details; can be customized with CSS
+- [**WEBP**](https://developers.google.com/speed/webp): similar to PNG but superior lossless and lossy compression for images on the web
+- [**AVIF**](https://en.wikipedia.org/wiki/AVIF): better compression efficiency than JPG as well as better detail preservation
+
+### Minimize Delivery
+
+## Backend
+
+### CDNs
+
+### Caching
+
+### Loading Balancing
+
+### DB Scaling
+
+### GZIP
