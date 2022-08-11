@@ -9,3 +9,45 @@
 Modern computers have more than 30 billion bits in its working memory. We separate them into chunks - called **values** - so that we can represent the bits without getting confused.
 
 JavaScript uses 64 bits. This translates into 2^64 different numbers (18 quintillion). Meaning, we can use 64-bit chunks freely without worrying about memory overflow.
+
+## Chaper 2: Program Structure
+
+An **expression** is a fragment of code that produces a value. A **statement** contains multiple expressions to produce a program. A program, therefore, is a list of statements. Statements are only useful when they change the the state of the world or the internal state of the machine in a way that affects subsequent statements.
+
+**Chessboard Challenge**
+
+The following program should output a `size` x `size` chessboard:
+
+```javascript
+function createChessboard(size = 8) {
+  let board = ''
+
+  for (let i = 0; i < size; i++) {
+    board += '|'
+    for (let j = 0; j < size; j++) {
+      if ((j + i) % 2 === 0) {
+        board += ' '
+      } else {
+        board += '#'
+      }
+    }
+    board += '|'
+    board += '\n'
+  }
+
+  console.log(board)
+}
+
+createChessboard()
+
+/* Output:
+
+|# # # # |
+| # # # #|
+|# # # # |
+| # # # #|
+|# # # # |
+| # # # #|
+|# # # # |
+*/
+```
