@@ -16,7 +16,7 @@ An **expression** is a fragment of code that produces a value. A **statement** c
 
 **Chessboard Challenge**
 
-The following program should output a `size` x `size` chessboard:
+The below program outputs a `size` x `size` chessboard. The sum of the inner and outer loop indices reflects the current position in the two-dimensional grid. The logic here is that if the modulus (`%`) of the current position is even we output a space. Otherwise, we output a `#`.
 
 ```javascript
 function createChessboard(size = 8) {
